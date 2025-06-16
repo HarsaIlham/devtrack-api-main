@@ -1,0 +1,6 @@
+@devtrack_HostAddress = http://localhost:5113
+
+GET {{devtrack_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

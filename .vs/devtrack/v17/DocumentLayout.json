@@ -1,0 +1,293 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|d:\\semester 4\\pbm\\devtrack-api-main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|D:\\SEMESTER 4\\PBM\\devtrack-api-main\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|D:\\SEMESTER 4\\PBM\\devtrack-api-main\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|D:\\SEMESTER 4\\PBM\\devtrack-api-main\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|D:\\SEMESTER 4\\PBM\\devtrack-api-main\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|solutionrelative:controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|D:\\SEMESTER 4\\PBM\\devtrack-api-main\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|solutionrelative:models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|D:\\SEMESTER 4\\PBM\\devtrack-api-main\\controllers\\riwayatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|solutionrelative:controllers\\riwayatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|D:\\SEMESTER 4\\PBM\\devtrack-api-main\\dbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|solutionrelative:dbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|D:\\SEMESTER 4\\PBM\\devtrack-api-main\\controllers\\mandorprojectprojectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|solutionrelative:controllers\\mandorprojectprojectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|D:\\SEMESTER 4\\PBM\\devtrack-api-main\\models\\mandorprojectproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|solutionrelative:models\\mandorprojectproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|D:\\SEMESTER 4\\PBM\\devtrack-api-main\\controllers\\mandorprojectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|solutionrelative:controllers\\mandorprojectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|D:\\SEMESTER 4\\PBM\\devtrack-api-main\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|solutionrelative:models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|D:\\SEMESTER 4\\PBM\\devtrack-api-main\\models\\mandorproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|solutionrelative:models\\mandorproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|D:\\SEMESTER 4\\PBM\\devtrack-api-main\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|solutionrelative:controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|D:\\SEMESTER 4\\PBM\\devtrack-api-main\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|solutionrelative:controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|D:\\SEMESTER 4\\PBM\\devtrack-api-main\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D59A504-2EAD-4EE8-940C-7EA98E1D2764}|devtrack.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 19,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MandorProjectProjectController.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Controllers\\MandorProjectProjectController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MandorProjectProjectController.cs",
+              "ToolTip": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Controllers\\MandorProjectProjectController.cs",
+              "RelativeToolTip": "Controllers\\MandorProjectProjectController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAzwEcAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T09:31:23.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MandorProjectController.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Controllers\\MandorProjectController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MandorProjectController.cs",
+              "ToolTip": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Controllers\\MandorProjectController.cs",
+              "RelativeToolTip": "Controllers\\MandorProjectController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T06:09:52.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "Models\\Role.cs",
+              "ToolTip": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Models\\Role.cs",
+              "RelativeToolTip": "Models\\Role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T13:30:17.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserManagementController.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Controllers\\UserManagementController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserManagementController.cs",
+              "ToolTip": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Controllers\\UserManagementController.cs",
+              "RelativeToolTip": "Controllers\\UserManagementController.cs",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAswH0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T12:42:04.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T12:39:36.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MandorProjectProject.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Models\\MandorProjectProject.cs",
+              "RelativeDocumentMoniker": "Models\\MandorProjectProject.cs",
+              "ToolTip": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Models\\MandorProjectProject.cs",
+              "RelativeToolTip": "Models\\MandorProjectProject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T12:37:12.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MandorProject.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Models\\MandorProject.cs",
+              "RelativeDocumentMoniker": "Models\\MandorProject.cs",
+              "ToolTip": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Models\\MandorProject.cs",
+              "RelativeToolTip": "Models\\MandorProject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T04:30:32.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RiwayatController.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Controllers\\RiwayatController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RiwayatController.cs",
+              "ToolTip": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Controllers\\RiwayatController.cs",
+              "RelativeToolTip": "Controllers\\RiwayatController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwDoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T13:42:45.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ReportController.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Controllers\\ReportController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReportController.cs",
+              "ToolTip": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Controllers\\ReportController.cs",
+              "RelativeToolTip": "Controllers\\ReportController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T13:42:37.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAA2wEoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T13:42:22.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAwwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-02T06:37:23.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Project.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Models\\Project.cs",
+              "RelativeDocumentMoniker": "Models\\Project.cs",
+              "ToolTip": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Models\\Project.cs",
+              "RelativeToolTip": "Models\\Project.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T06:18:44.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\DbContext\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DbContext\\AppDbContext.cs",
+              "ToolTip": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\DbContext\\AppDbContext.cs",
+              "RelativeToolTip": "DbContext\\AppDbContext.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAYwG4AAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T06:17:58.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProjectController.cs",
+              "ToolTip": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "Controllers\\ProjectController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwA4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T06:16:22.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-02T06:13:36.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\SEMESTER 4\\PBM\\devtrack-api-main\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAAwAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T06:13:33.911Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
