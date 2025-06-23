@@ -80,10 +80,13 @@ namespace devtrack.AppDBContext
                 entity.Property(r => r.Tanggal).HasColumnName("tanggal");
                 entity.Property(r => r.Deskripsi).HasColumnName("deskripsi");
                 entity.Property(r => r.Material).HasColumnName("material");
+                entity.Property(r => r.Lokasi).HasColumnName("lokasi");
                 entity.Property(r => r.JumlahPekerja).HasColumnName("jumlah_pekerja");
                 entity.Property(r => r.Kendala).HasColumnName("kendala");
                 entity.Property(r => r.Foto).HasColumnName("foto");
                 entity.Property(r => r.ProjectId).HasColumnName("project_id");
+                entity.Property(r => r.MandorProyekId).HasColumnName("mandor_proyek_id");
+                entity.Property(r => r.UpdatedAt).HasColumnName("updated_at");
 
                 entity.HasOne(r => r.Project)
                       .WithMany()
@@ -96,11 +99,14 @@ namespace devtrack.AppDBContext
                 entity.ToTable("riwayat");
                 entity.HasKey(r => r.RiwayatId);
                 entity.Property(r => r.RiwayatId).HasColumnName("riwayat_id");
+                entity.Property(r => r.Catatan).HasColumnName("catatan");
+                entity.Property(r => r.TanggalSelesai).HasColumnName("tanggal_selesai");
                 entity.Property(r => r.ProjectId).HasColumnName("project_id");
 
                 entity.HasOne(r => r.Project)
                       .WithMany()
                       .HasForeignKey(r => r.ProjectId);
+
             });
 
             modelBuilder.Entity<MandorProjectProject>(entity =>

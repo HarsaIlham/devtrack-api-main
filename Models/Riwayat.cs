@@ -1,4 +1,6 @@
-﻿namespace devtrack.Models
+﻿using System.Text.Json.Serialization;
+
+namespace devtrack.Models
 {
     public class Riwayat
     {
@@ -6,7 +8,8 @@
         public DateTime TanggalSelesai { get; set; }
         public string? Catatan { get; set; }
         public int ProjectId { get; set; }
-        public Project Project { get; set; }
+        [JsonIgnore]
+        public Project? Project { get; set; }
     }
 
 }

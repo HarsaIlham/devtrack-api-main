@@ -14,13 +14,31 @@ namespace devtrack.Controllers
         private readonly AppDbContext _context;
         public UserManagementController(AppDbContext context) => _context = context;
 
+        [Authorize(Roles = "developer")]
         [HttpGet("mandor")]
         public IActionResult GetMandor()
         {
-            var mandors = _context.Users.OrderByDescending(p => p.UserId).Where(p => p.RoleId == 1).ToList();
-            return Ok(mandors);
+            try
+            {
+                var mandors = _context.Users
+                                           .OrderByDescending(p => p.UserId)
+                                           .Where(p => p.RoleId == 1)
+                                           .ToList();
+
+                if (mandors == null || !mandors.Any())
+                {
+                    return NotFound(new { message = "Data mandor tidak ditemukan." });
+                }
+
+                return Ok(mandors);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = "Terjadi kesalahan saat mengambil data mandor.", error = ex.Message });
+            }
         }
 
+        [Authorize(Roles = "developer,mandor")]
         [HttpGet("mandor/{id}")]
         public async Task<IActionResult> GetMandorById(int id)
         {
@@ -32,7 +50,7 @@ namespace devtrack.Controllers
             return Ok(mandor);
         }
 
-        //[Authorize(Roles = "developer")]
+        [Authorize(Roles = "developer")]
         [HttpPost("add-mandor")]
         public IActionResult AddMandor([FromBody] User mandor)
         {
@@ -50,33 +68,35 @@ namespace devtrack.Controllers
             _context.Users.Add(mandor);
             var saveUser = _context.SaveChanges();
 
-            if (saveUser == 0) return BadRequest("Gagal menyimpan user mandor.");
+            if (saveUser == 0) return BadRequest("Gagal menambahkan akun mandor.");
 
             _context.MandorProjects.Add(new MandorProject { UserId = mandor.UserId });
             _context.SaveChanges();
 
-            return Ok(new { message = "Mandor berhasil dibuat", mandor});
+            return Ok(new { message = "Akun mandor berhasil dibuat"});
         }
 
+        [Authorize(Roles = "developer")]
         [HttpPut("ToggleStatus/{id}")]
         public async Task<IActionResult> ToogleStatus(int id)
         {
             var user = await _context.Users.FindAsync(id);
-            if (user == null) return NotFound(new {message = "user tidak ditemukan"});
-            
+            if (user == null) return NotFound(new { message = "user tidak ditemukan" });
+
             user.Is_active = !user.Is_active;
 
             try
             {
                 await _context.SaveChangesAsync();
-                return Ok(new { message = "Status user berhasil diubah", is_active = user.Is_active });
+                return Ok(new { message = "Status mandor berhasil diubah", is_active = user.Is_active });
             }
             catch (DBConcurrencyException)
             {
-                return BadRequest(new { message = "Status user gagal diubah" });
+                return BadRequest(new { message = "Status mandor gagal diubah" });
             }
         }
 
+        [Authorize(Roles = "developer, mandor")]
         [HttpPut("edit-mandor/{id}")]
         public async Task<IActionResult> EditMandor(int id, User updatedMandor)
         {
@@ -103,22 +123,29 @@ namespace devtrack.Controllers
         }
 
 
-        [Authorize(Roles = "mandor")]
+        [Authorize(Roles = "developer,mandor")]
         [HttpPut("edit-password")]
         public IActionResult EditPassword([FromBody] ChangePasswordDto model)
         {
             var userId = int.Parse(User.FindFirst("UserId").Value);
             var mandor = _context.Users.FirstOrDefault(u => u.UserId == userId);
-            if (mandor == null || mandor.Role.RoleName != "mandor") return Unauthorized();
+            if (mandor == null) return Unauthorized("users tidak ada");
 
-            mandor.Password = model.NewPassword;
+            bool isOldPasswordCorrect = BCrypt.Net.BCrypt.Verify(model.OldPassword, mandor.Password);
+            if (!isOldPasswordCorrect)
+            {
+                return BadRequest(new { message = "Password lama salah" });
+            }
+
+            mandor.Password = BCrypt.Net.BCrypt.HashPassword(model.NewPassword);
             _context.SaveChanges();
 
-            return Ok(new { message = "Password updated successfully" });
+            return Ok(new { message = "Password berhasil diperbarui" });
         }
 
         public class ChangePasswordDto
         {
+            public string OldPassword { get; set; }
             public string NewPassword { get; set; }
         }
     }

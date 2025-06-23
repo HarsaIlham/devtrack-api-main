@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "login",
-        "Type": "devtrack.Models.User",
+        "Type": "devtrack.Controllers.LoginDto",
         "IsRequired": true
       }
     ],
@@ -26,6 +26,32 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[devtrack.Models.MandorProject, devtrack, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "devtrack.Controllers.MandorProjectController",
+    "Method": "GetById",
+    "RelativePath": "api/MandorProject/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "devtrack.Models.MandorProject",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -63,23 +89,28 @@
   },
   {
     "ContainingType": "devtrack.Controllers.MandorProjectProjectController",
-    "Method": "AssignMandor",
+    "Method": "Create",
     "RelativePath": "api/MandorProjectProject/assign",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "mandorProyekId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "projectId",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "mpp",
+        "Type": "devtrack.Models.MandorProjectProject",
+        "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "devtrack.Controllers.MandorProjectProjectController",
+    "Method": "GetByUser",
+    "RelativePath": "api/MandorProjectProject/byMandor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -126,22 +157,6 @@
   },
   {
     "ContainingType": "devtrack.Controllers.ProjectController",
-    "Method": "DeleteProject",
-    "RelativePath": "api/Project/delete/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "devtrack.Controllers.ProjectController",
     "Method": "EditProject",
     "RelativePath": "api/Project/edit/{id}",
     "HttpMethod": "PUT",
@@ -163,12 +178,44 @@
   },
   {
     "ContainingType": "devtrack.Controllers.ReportController",
-    "Method": "AllReports",
+    "Method": "GetById",
+    "RelativePath": "api/Report/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "devtrack.Controllers.ReportController",
+    "Method": "GetAllReports",
     "RelativePath": "api/Report/all",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "devtrack.Controllers.ReportController",
+    "Method": "GetByProjectId",
+    "RelativePath": "api/Report/byProject/{projectId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -202,7 +249,7 @@
       },
       {
         "Name": "updatedReport",
-        "Type": "Report",
+        "Type": "devtrack.Models.UpdateReportDTO",
         "IsRequired": true
       }
     ],
@@ -218,7 +265,7 @@
     "Parameters": [
       {
         "Name": "report",
-        "Type": "Report",
+        "Type": "devtrack.Models.Report",
         "IsRequired": true
       }
     ],
@@ -226,22 +273,18 @@
   },
   {
     "ContainingType": "devtrack.Controllers.RiwayatController",
-    "Method": "DeveloperRiwayat",
-    "RelativePath": "api/Riwayat/developer",
-    "HttpMethod": "GET",
+    "Method": "AddRiwayat",
+    "RelativePath": "api/Riwayat/add-riwayat",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "devtrack.Controllers.RiwayatController",
-    "Method": "MandorRiwayat",
-    "RelativePath": "api/Riwayat/mandor",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "newRiwayat",
+        "Type": "devtrack.Models.Riwayat",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

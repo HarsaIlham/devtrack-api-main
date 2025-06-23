@@ -26,7 +26,7 @@ namespace devtrack.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> LoginAsync([FromBody] User login)
+        public async Task<IActionResult> LoginAsync([FromBody] LoginDto login)
         {
             if (login == null ||
                 string.IsNullOrWhiteSpace(login.Email) ||
@@ -39,10 +39,15 @@ namespace devtrack.Controllers
                              .Include(u => u.Role)
                              .SingleOrDefaultAsync(u => u.Email == login.Email);
 
-            //if (user == null || !BCrypt.Net.BCrypt.Verify(login.Password, user.Password))
-            //{
-            //    return Unauthorized("Email atau password salah.");
-            //}
+            if (user == null || !BCrypt.Net.BCrypt.Verify(login.Password, user.Password))
+            {
+                return BadRequest("Email atau password salah.");
+            }
+
+            if (user.Is_active == false)
+            {
+                return Unauthorized("Akun User sedang nonaktif");
+            }
 
             var token = GenerateJwtToken(user);
             return Ok(new { token, user.Role.RoleName});
@@ -69,6 +74,12 @@ namespace devtrack.Controllers
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+    }
+
+    public class LoginDto
+    {
+        public string Email { get; set; }
+        public string Password { get; set; }
     }
 }
 

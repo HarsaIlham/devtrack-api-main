@@ -16,8 +16,23 @@ namespace devtrack.Controllers
         [HttpGet]
         public IActionResult GetAllProjects()
         {
-            var projects = _context.Projects.OrderByDescending(p => p.ProjectId).Where(p => p.Status == "Belum Mulai" || p.Status == "Sedang Berjalan").ToList();
-            return Ok(projects);
+            try
+            {
+                var projects = _context.Projects
+                                        .OrderByDescending(p => p.ProjectId)
+                                        .ToList();
+
+                if (projects == null || !projects.Any())
+                {
+                    return NotFound(new { message = "Projek tidak ditemukan." });
+                }
+
+                return Ok(projects);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = "Terjadi kesalahan saat mengambil data projek.", error = ex.Message });
+            }
         }
 
         [Authorize(Roles = "developer")]
@@ -33,43 +48,61 @@ namespace devtrack.Controllers
 
         }
 
-        //[Authorize(Roles = "developer")]
+        [Authorize(Roles = "developer")]
         [HttpPost("create")]
         public IActionResult Create([FromBody] Project project)
         {
-            
-            _context.Projects.Add(project);
-            _context.SaveChanges();
-            return Ok(project);
+            try
+            {
+                if (project == null)
+                {
+                    return BadRequest(new { message = "Data projek tidak boleh kosong." });
+                }
+
+                _context.Projects.Add(project);
+                _context.SaveChanges();
+
+                return Ok(new { message = "Proyek berhasil ditambahkan" });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = "Terjadi kesalahan saat menambah projek.", error = ex.Message });
+            }
         }
 
-        //[Authorize(Roles = "developer")]
+        [Authorize(Roles = "developer")]
         [HttpPut("edit/{id}")]
         public IActionResult EditProject(int id, [FromBody] Project updatedProject)
         {
-            var project = _context.Projects.FirstOrDefault(p => p.ProjectId == id);
-            if (project == null) return NotFound();
+            try
+            {
+                if (updatedProject == null)
+                {
+                    return BadRequest(new { message = "Data projek tidak boleh kosong." });
+                }
 
-            project.NamaProject = updatedProject.NamaProject;
-            project.Lokasi = updatedProject.Lokasi;
-            project.Deadline = updatedProject.Deadline;
-            project.Status = updatedProject.Status;
-            project.Foto = updatedProject.Foto;
-            _context.SaveChanges();
+                var project = _context.Projects.FirstOrDefault(p => p.ProjectId == id);
+                if (project == null)
+                {
+                    return NotFound(new { message = $"Projek dengan ID {id} tidak ditemukan." });
+                }
 
-            return Ok(project);
+                project.NamaProject = updatedProject.NamaProject;
+                project.Lokasi = updatedProject.Lokasi;
+                project.Deadline = updatedProject.Deadline;
+                project.Status = updatedProject.Status;
+                project.Foto = updatedProject.Foto;
+
+                _context.SaveChanges();
+
+                return Ok(new { message = "Proyek berhasil diedit", project });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = "Terjadi kesalahan saat mengedit projek.", error = ex.Message });
+            }
         }
 
-        //[Authorize(Roles = "developer")]
-        [HttpPut("delete/{id}")]
-        public IActionResult DeleteProject(int id)
-        {
-            var project = _context.Projects.FirstOrDefault(p => p.ProjectId == id);
-            if (project == null) return NotFound();
-            _context.Projects.Update(project);
-            _context.SaveChanges();
-            return Ok(new { message = "Project deleted" });
-        }
 
     }
 

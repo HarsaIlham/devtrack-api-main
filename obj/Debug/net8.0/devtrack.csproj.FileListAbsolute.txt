@@ -105,3 +105,4 @@ D:\SEMESTER 4\PBM\devtrack-api-main\obj\Debug\net8.0\refint\devtrack.dll
 D:\SEMESTER 4\PBM\devtrack-api-main\obj\Debug\net8.0\devtrack.pdb
 D:\SEMESTER 4\PBM\devtrack-api-main\obj\Debug\net8.0\devtrack.genruntimeconfig.cache
 D:\SEMESTER 4\PBM\devtrack-api-main\obj\Debug\net8.0\ref\devtrack.dll
+D:\SEMESTER 4\PBM\devtrack-api-main\obj\Debug\net8.0\devtrack.sourcelink.json
